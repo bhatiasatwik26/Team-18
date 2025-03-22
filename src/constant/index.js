@@ -53,17 +53,28 @@ export const Demo_user = {
   nextRank: "General",
   eventsSubscribed: [
     {
+      id: "1",
       name: "Walkathon",
       tasks: [
-        "Give water",
-        "Distribute bikes",
-        "Drink Give water",
-        "Take back bikes",
+        {
+          name: "Distribute water bottles",
+          deadline: "2025-03-25",
+          status: "pending",
+        },
+        {
+          name: "Manage registrations",
+          deadline: "2025-03-27",
+          status: "pending",
+        },
       ],
     },
     {
-      name: "Literature",
-      tasks: ["Give books", "Distribute candy"],
+      id: "2",
+      name: "Tech Workshop",
+      tasks: [
+        { name: "Set up equipment", deadline: "2025-04-01", status: "pending" },
+        { name: "Prepare presentation", deadline: "2025-03-30" },
+      ],
     },
   ],
 };
